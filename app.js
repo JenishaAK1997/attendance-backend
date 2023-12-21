@@ -11,7 +11,7 @@ app.use(cors());
 // Middleware
 app.use(bodyParser.json());
 
-const url =
+const uri =
   'mongodb+srv://aasim:XfpFdiCzA3zYUPen@cluster0.kulamu6.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(uri);
@@ -165,7 +165,7 @@ app.get('/allattendance', async (req, res) => {
   });
 
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
